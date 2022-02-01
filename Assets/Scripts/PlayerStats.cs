@@ -6,6 +6,8 @@ public class PlayerStats : MonoBehaviour
 {
     public bool isTurn, canMove, hasMoved, hasPlayedCard, hasEndedTurn;
 
+    public List<Card> deck;
+
     void Start()
     {
         

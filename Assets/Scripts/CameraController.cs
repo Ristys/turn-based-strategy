@@ -20,6 +20,20 @@ public class CameraController : MonoBehaviour
     public float yawSpeed = 100f;
 
 
+/*
+    List<PlayerStats> players;
+    GameObject[] playerObjects;
+
+    void Start()
+    {
+        if (players.Count == 0) {
+            playerObjects = GameObject.FindGameObjectsWithTag("Player");
+            foreach (GameObject player in playerObjects) {
+                players.Add(player.GetComponent(typeof (PlayerStats)) as PlayerStats);
+            }       
+        }
+    }
+*/
 
     void Update()
     {
@@ -36,12 +50,5 @@ public class CameraController : MonoBehaviour
 
         transform.RotateAround(target.position, Vector3.up, currentYaw);
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
 
 }

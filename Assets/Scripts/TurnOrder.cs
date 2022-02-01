@@ -64,7 +64,7 @@ public class TurnOrder : MonoBehaviour
         }
     }
 
-public List<PlayerStats> GetAllPlayers()
+    public List<PlayerStats> GetAllPlayers()
     {
         return players;
     }
